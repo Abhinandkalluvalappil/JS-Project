@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <center>
+    <form action="form.html">
+        <button class="btn" style="margin-top: 70px;">Add data</button>
+    </form>
+            <table border="10px" class="tb" style="margin-top: 30px;">
+                <tr class="col1">
+                    <th class="row1">
+                        Id
+                    </th>
+                    <th class="row2">
+                        Title
+                    </th>
+                </tr>
+                <tbody class="tableContent">
+
+                </tbody>
+            </table>
+
+    
+</center>
+    <script>
+        var posts = [
+    { id: 1, title: 'daily js news'},
+    { id: 2, title: 'daily python news'},
+    { id: 3, title: 'daily java news'},
+    { id: 4, title: 'daily .net news'},
+];
+
+var rowContent = document.querySelector('.tb .tableContent');
+var addData ="";
+posts.forEach(post=>{
+    addData += `<tr>
+                <td> ${post.id}</td>
+                <td> ${post.title}</td>
+                </tr>`;
+});
+rowContent.innerHTML = addData;
+    </script>
+</body>
+</html>

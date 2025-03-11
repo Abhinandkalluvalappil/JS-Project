@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="index.html" class="addValue">
+            <P>ID</P><input type="text" id="input1">
+            <p>Title</p><input type="text" id="input2"><br>
+            <br>
+            <button type="submit" id="btnClick" onclick="storeInput()">Submit</button>
+        </form>
+    </center>
+
+    <!-- <script>
+        var dat = [
+    { id: 1, title: 'daily js news'},
+    { id: 2, title: 'daily python news'},
+    { id: 3, title: 'daily java news'},
+    { id: 4, title: 'daily .net news'},
+];
+        function storeInput() {
+            // var inputArray = [];
+                const input1 = document.getElementById("input1");
+                const input2 = document.getElementById("input2");
+
+  const value1 = input1.value;
+  const value2 = input2.value;
+
+  dat.push({id:value1,title: value2});
+  var btnClick = document.getElementById("btnClick");
+  var rowContent = document.querySelector('.tb .tableContent');
+
+        }
+        btnClick.addEventListener('click' , function(){
+    
+    var addData ="";
+    posts.forEach(post=>{
+        addData += `<tr>
+                    <td> ${post.id}</td>
+                    <td> ${post.title}</td>
+                    </tr>`;
+                    `<tr>
+                        <td> ${value1}</td>
+                        <td> ${value2}</td>
+                        </tr>`
+    });
+    
+    rowContent.innerHTML = addData;
+      
+        
+    console.log(dat)
+    console.log(dat[5])
+    })
+    </script> -->
+</body>
+</html>
+
+
+
+
+
